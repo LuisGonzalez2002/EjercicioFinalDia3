@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Ejercicio Final dia 3</title>
 </head>
 <body>
-$END$
+
+<div class="header">
+    <h1>Mono fumón</h1>
+</div>
+
+<div class="sidebar" id="sidebar1">
+</div>
+
+<div class="main">
+    <p><span class="highlight">Texto highliteado</span> en el panel principal</p>
+    <p class="underline">Este es un texto subrayado en el contenido principal.</p>
+    <img src="descarga.jpg" alt="F1">
+</div>
+
+<div class="sidebar" id="sidebar2">
+</div>
+
+<div class="footer">
+    Footer
+</div>
+
 </body>
 </html>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header, .footer, .main, .sidebar {
+        box-sizing: border-box;
+
+    }
+
+    .header {
+        background-color: #FFD700; /* Amarillo */
+        overflow: hidden;
+        align-content: center;
+    }
+
+    .sidebar {
+        background-color: #FFC0CB; /* Rosado */
+        width: 20%;
+        float: left;
+        height: 300px;
+    }
+
+    .main {
+        background-color: #90EE90; /* Verde claro */
+        margin-left: 22%; /* Desplazamiento igual al ancho del sidebar más el padding */
+        height: 400px; /* Altura fija para el ejemplo */
+    }
+
+    .footer {
+        background-color: #ADD8E6; /* Azul claro */
+        clear: both; /* Esto limpia los floats previos */
+    }
+
+    h1 {
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+
+    .highlight {
+        background-color: yellow;
+    }
+
+</style>
